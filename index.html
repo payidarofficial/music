@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>Pâyidar - Music</title>
+
+        <!-- Meta -->
+        <meta name="title" content="Pâyidar Music Player.">
+        <meta name="description" content="Zart Zurt">
+        <meta name="author" content="Pâyidar" />
+        <meta name="og:site_name" content="Coded By Pâyidar">
+
+        <!-- Link -->
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- Script -->
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!-- PÂYİDAR TARAFINDAN HAZIRLANMIŞTIR -->
+        <div class="played">
+            <p>Müzik Oynatılıyor.</p>
+        </div>
+        <div class="paused">
+            <p>Müzik Durduruldu.</p>
+        </div>
+        <div class="volumeup">
+            
+        </div>
+
+        <audio id="player" src="müzik/yt1s.com - JONNY5  PISLIK88  FREDDY KRÜGER PROD DC.mp3"></audio>
+
+        <div class="kontrol">
+            <button class="playbtn" onclick="document.getElementById('player').play()">Müziği Oynat</button>
+            <button class="pausebtn" onclick="document.getElementById('player').pause()">Müziği Durdur</button>
+            <button class="volumebtn1" onclick="document.getElementById('player').volume += 0.1">Sesi Azalt</button>
+            <button onclick="document.getElementById('player').volume -= 0.1">Sesi Arttır</button>
+        </div>
+        <!-- PÂYİDAR TARAFINDAN HAZIRLANMIŞTIR -->
+
+        <script>
+            $(function(){
+                $('.playbtn').click(function(){
+                    $('.played').css({
+                        "opacity": "1"
+                    })
+
+                    setTimeout(() => {
+                        $('.played').css({
+                            "opacity": "0"
+                        })
+                    }, 2000)
+                }).stop();
+            })
+
+            $(function(){
+                $('.pausebtn').click(function(){
+                    $('.paused').css({
+                        "opacity": "1"
+                    })
+
+                    setTimeout(() => {
+                        $('.paused').css({
+                            "opacity": "0"
+                        })
+                    }, 2000)
+                }).stop();
+            })
+        </script>
+    </body>
+</html>

@@ -1,0 +1,86 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+/* Genel */
+body{
+    background-color: #272731;
+    margin: 0;
+}
+
+/* Kontrol Bar */
+.kontrol{
+    padding: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.kontrol button{
+    background-color: #272731;
+    padding: 5px;
+    overflow: hidden;
+    margin-left: 5px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 0px 1px #222;
+    transition: 250ms all;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+.kontrol button:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0px 0px 0px 1px white;
+}
+.kontrol button:focus{
+    background-color: red;
+    color: white;
+    box-shadow: 0px 0px 0px 1px red;
+}
+
+/* Pop Up */
+.played{
+    padding: 5px;
+    margin: 5px 0 0 0;
+    opacity: 0;
+    transition: 250ms all;
+    visibility: visible;
+}
+.played > p{
+    color: lime;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bolder;
+    line-height: normal;
+    text-align: center;
+    font-size: 20px;
+}
+.paused{
+    padding: 5px;
+    margin: 5px 0 0 0;
+    opacity: 0;
+    transition: 250ms all;
+    visibility: visible;
+}
+.paused > p{
+    color: lime;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bolder;
+    line-height: normal;
+    text-align: center;
+    font-size: 20px;
+}
+.volumeup{
+    padding: 5px;
+    margin: 5px 0 0 0;
+    opacity: 0;
+    transition: 250ms all;
+    visibility: visible;
+}
+.volumeup > p{
+    color: lime;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bolder;
+    line-height: normal;
+    text-align: center;
+    font-size: 20px;
+}
